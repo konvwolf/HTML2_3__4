@@ -29,6 +29,7 @@ p {
 }
 
 header {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/header-back.jpg") #bc2e3a;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/header-back.jpg") #bc2e3a;
     background-blend-mode: multiply;
     background-size: cover;
@@ -102,6 +103,10 @@ header h1 {
     margin-left: 100px;
     margin-top: 220px;
     background-position: -108px 650px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 5px black);
+    filter: progid:DXImageTransform.Microsoft.Glow(color=black, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=black, strength=0);
 
 }
 
@@ -120,13 +125,20 @@ header h2 {
     margin-left: 165px;
     margin-top: 488px;
     background-position: -188px 407px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="5" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 5px black);
+    filter: progid:DXImageTransform.Microsoft.Glow(color=black, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=black, strength=0);
 }
 
 header img {
     position: absolute;
     margin-top: 85px;
     margin-left: 510px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="50" /><feOffset dx="21" dy="41" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.6)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.8" /><feFuncG type="linear" slope="0.8" /><feFuncB type="linear" slope="0.8" /></feComponentTransfer></filter></svg>#filter');
+    -webkit-filter: drop-shadow(20px 40px 50px rgba(0, 0, 0, 0.6)) brightness(80%);
     filter: drop-shadow(20px 40px 50px rgba(0, 0, 0, 0.6)) brightness(80%);
+    filter: progid:DXImageTransform.Microsoft.Glow(color=rgba(0, 0, 0, 0.6), strength=0) progid:DXImageTransform.Microsoft.Shadow(color=rgba(0, 0, 0, 0.6), strength=0) progid:DXImageTransform.Microsoft.Light();
 }
 
 .readmore {
@@ -169,6 +181,7 @@ header img {
     width: 1422px;
     height: 1422px;
     background-color: #171717;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -1050px;
     right: -295px;
@@ -221,8 +234,11 @@ header img {
 }
 
 .what {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: '. name .'
         'creative wedobest best'
@@ -240,6 +256,7 @@ header img {
     width: 339px;
     height: 339px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     margin-left: -295px;
     margin-top: 210px;
@@ -251,6 +268,7 @@ header img {
     width: 339px;
     height: 339px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: -170px;
     bottom: -170px;
@@ -317,6 +335,7 @@ header img {
     width: 1183px;
     height: 1183px;
     background-color: #171717;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -15px;
     left: -1195px;
@@ -328,6 +347,7 @@ header img {
     width: 1183px;
     height: 1183px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -296px;
     right: -894px;
@@ -438,6 +458,7 @@ header img {
     width: 1183px;
     height: 1183px;
     background-color: #171717;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -591px;
     left: -1195px;
@@ -449,6 +470,7 @@ header img {
     width: 450px;
     height: 450px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: -291px;
     top: -225px;
@@ -460,6 +482,7 @@ header img {
     width: 150px;
     height: 150px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     left: -75px;
     bottom: -75px;
@@ -475,7 +498,10 @@ header img {
 }
 
 #carousel .slide img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="11" dy="11" result="offsetblur" /><feFlood flood-color="rgba(255,255,255,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge><feGaussianBlur in="SourceAlpha" stdDeviation="26" /><feOffset dx="1" dy="17" result="offsetblur" /><feFlood flood-color="rgba(136,136,136,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(10px 10px 0 white) drop-shadow(-10px -10px 0 white) drop-shadow(-10px 10px 0 white) drop-shadow(10px -10px 0 white) drop-shadow(0 16px 26px #888);
     filter: drop-shadow(10px 10px 0 white) drop-shadow(-10px -10px 0 white) drop-shadow(-10px 10px 0 white) drop-shadow(10px -10px 0 white) drop-shadow(0 16px 26px #888);
+    filter: progid:DXImageTransform.Microsoft.Glow(color=white, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=white, strength=0) progid:DXImageTransform.Microsoft.Glow(color=#888, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=#888, strength=0);
 }
 
 #carousel .slide {
@@ -547,7 +573,10 @@ header img {
 .client_photo {
     float: left;
     width: 336px;
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="0" /><feOffset dx="11" dy="11" result="offsetblur" /><feFlood flood-color="rgba(255,255,255,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge><feGaussianBlur in="SourceAlpha" stdDeviation="26" /><feOffset dx="1" dy="17" result="offsetblur" /><feFlood flood-color="rgba(128,128,128,1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+    -webkit-filter: drop-shadow(10px 10px 0 white) drop-shadow(-10px -10px 0 white) drop-shadow(-10px 10px 0 white) drop-shadow(10px -10px 0 white) drop-shadow(0 16px 26px gray);
     filter: drop-shadow(10px 10px 0 white) drop-shadow(-10px -10px 0 white) drop-shadow(-10px 10px 0 white) drop-shadow(10px -10px 0 white) drop-shadow(0 16px 26px gray);
+    filter: progid:DXImageTransform.Microsoft.Glow(color=white, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=white, strength=0) progid:DXImageTransform.Microsoft.Glow(color=gray, strength=0) progid:DXImageTransform.Microsoft.Shadow(color=gray, strength=0);
 }
 
 .client blockquote {
@@ -584,6 +613,7 @@ header img {
     width: 956px;
     height: 956px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     left: -596px;
     top: -26px;
@@ -596,6 +626,7 @@ header img {
     width: 360px;
     height: 360px;
     background-color: #171717;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -180px;
     right: -180px;
@@ -604,6 +635,7 @@ header img {
 footer {
     padding: 124px 200px;
     box-sizing: border-box;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/footer.jpg') no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/footer.jpg') no-repeat;
     background-size: cover;
     color: white;
@@ -630,8 +662,13 @@ footer h4 {
 }
 
 .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     vertical-align: middle;
     color: white;
@@ -686,6 +723,7 @@ footer:before {
     width: 500px;
     height: 500px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     left: -339px;
     top: -250px;
@@ -697,6 +735,7 @@ footer:after {
     width: 348px;
     height: 348px;
     background-color: #bc2e3a;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: 0;
     bottom: -174px;
